@@ -15,7 +15,7 @@
 	
 	&__row
 		display flex
-		align-items center
+		align-items flex-end
 		justify-content space-between
 		flex-wrap wrap
 		
@@ -24,13 +24,15 @@
 			flex 1 0 50%
 			&:first-child
 				padding-right 50px
+			p
+				font-size .8em
 	
 	
 		
 	&__title
 		text-transform uppercase
 		margin-bottom 15px
-		font 1.5em $Bold
+		font 1.2em $Bold
 
 .bookmark__star
 	padding 10px 20px
@@ -39,15 +41,17 @@
 	font-family $Bold
 	background url('../img/star.svg') right 20px center no-repeat
 	background-size 30px 30px
+	font-size 1em
 	&--footer
 		max-width 550px
 		margin 0 auto
+		font-size 1em
 			
 .logo
 	display block
 	margin-bottom 20px
-		&:hover
-			opacity .8
+	&:hover
+		opacity .8
 	&__footer
 		max-width 550px
 		margin 0 auto 15px auto

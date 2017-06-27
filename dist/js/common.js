@@ -32,47 +32,11 @@ $(document).ready(function() {
 	$(".porn__list--link").each(function() {
         $(this).parent().prepend("<img width='16px' height='16px' src='" + $(this).attr("href") + "/favicon.ico' />");
     });
-	
-	// ========= R e m o v e   c l a s s e s ===========
-	$('.form__input--validate').on('focus',function() {
-		if($(this).hasClass('validate')) {
-			$(this).removeClass('validate');
-			$(this).next().addClass('hidden');
+
+	$('.list__title').on('click',function() {
+		if(html < 702) {
+			$(this).next().slideToggle(300);
 		}
-	});
-	// ========= =========== =========== ===========
-
-	
-	$('.form__contact').submit(function(e) {
-		e.preventDefault();
-
-		var that = $(this);
-			inputs = that.find('.form__input--validate'),
-			flag = true;
-
-		// Validate
-		$(inputs).each(function() {
-			if(!$(this).val() || $(this).val() == "") {
-				$(this).addClass('validate');
-				$(this).next().removeClass('hidden');
-				flag = false;
-			}
-		});
-
-		if(!flag) {return false;}
-
-		$.ajax({
-			type: "POST",
-			url: "mail.php", //Change
-			data: that.serialize()
-		}).done(function() {
-			// add active clases
-			setTimeout(function() {
-				// remove active classes
-				that.trigger("reset");
-			}, 2000);
-		});
-
 	});
 	// ========= =========== =========== ===========
 });

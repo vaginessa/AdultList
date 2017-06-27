@@ -26,9 +26,7 @@
 		border-color $primary-color
 		.list__title
 			background-color $primary-color
-			&:after
-				color $accent-color
-				border-color $accent-color
+			
 	&--tall
 		height 600px
 	&--small
@@ -52,12 +50,12 @@
 		height 15px
 		line-height 15px
 		text-align center
-		border 2px solid $primary-color
+		border 2px solid $light-color
 		position absolute
 		top 50%
 		right 10px
 		transform translateY(-50%)
-		color $primary-color
+		color $light-color
 		cursor pointer
 		display none
 .porn__list
@@ -93,6 +91,13 @@
 			text-decoration none
 			color $accent-color
 
+.contact__us
+	color $primary-color
+	font 1.2em $Bold
+	display inline-block
+	
+	&:hover
+		color $accent-color
 @import '_footer.styl'
 // File with media quaeries styles
 @import '_media.styl'

@@ -9,3 +9,33 @@
 +min-screen-height(minHeight)
 */
 
++max-screen(767px)
+	.header__row--block
+		width 100%
+		flex 1 0 100%
+		&:first-child
+			padding-right 0
+			margin-bottom 20px
+			
+	.list__wrapp
+
+		&:last-child
+			margin-bottom 30px
+		&--small
+			height 600px
+			
++max-screen(700px)
+	.list__title
+		&:after
+			display inline-block
+			
+	.list__wrapp
+		height auto
+	.porn__list
+		display none
+		
+	.row__list
+		margin-bottom 0
+			
+
+	
