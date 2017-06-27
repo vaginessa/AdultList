@@ -1,1 +1,55 @@
 @import '_vars.styl'
+
+
+.header
+	width 100%
+
+	background #7e3179
+	background -moz-linear-gradient(top, #7e3179 0%, #3e3c3d 100%)
+	background -webkit-linear-gradient(top, #7e3179 0%,#3e3c3d 100%)
+	background linear-gradient(to bottom, #7e3179 0%,#3e3c3d 100%)
+	border-bottom 4px solid $accent-color
+	color $light-color
+	
+	padding 20px 0
+	
+	&__row
+		display flex
+		align-items center
+		justify-content space-between
+		flex-wrap wrap
+		
+		&--block
+			width 50%
+			flex 1 0 50%
+			&:first-child
+				padding-right 50px
+	
+	
+		
+	&__title
+		text-transform uppercase
+		margin-bottom 15px
+		font 1.5em $Bold
+
+.bookmark__star
+	padding 10px 20px
+	border-radius 10px
+	border 2px dashed $primary-color
+	font-family $Bold
+	background url('../img/star.svg') right 20px center no-repeat
+	background-size 30px 30px
+	&--footer
+		max-width 550px
+		margin 0 auto
+			
+.logo
+	display block
+	margin-bottom 20px
+		&:hover
+			opacity .8
+	&__footer
+		max-width 550px
+		margin 0 auto 15px auto
+	
+	

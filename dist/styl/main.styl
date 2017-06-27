@@ -10,16 +10,88 @@
 @import '_basic.styl'
 // File with header styles
 @import '_header.styl'
-// icons
-@import '_icons.styl'
+
 //interface styles (buttons, links, etc)
 @import '_interface.styl'
 // Forms style
 @import '_form.styl'
 
+.row__list
+	margin-bottom 30px
+.list__wrapp
+	border-radius 10px
+	border 4px solid $accent-color
+	overflow hidden
+	&--primary
+		border-color $primary-color
+		.list__title
+			background-color $primary-color
+			&:after
+				color $accent-color
+				border-color $accent-color
+	&--tall
+		height 600px
+	&--small
+		height 285px
+		margin-bottom 30px
+		&:last-child
+			margin-bottom 0
 
-// Styles start here
-	
+.list__title
+	padding 10px
+	background-color $accent-color
+	color $light-color
+	font 1.1em $Bold
+	position relative
+	&:after
+		content '+'
+		font-size 1.1em
+		padding 3px
+		border-radius 10px
+		width 15px
+		height 15px
+		line-height 15px
+		text-align center
+		border 2px solid $primary-color
+		position absolute
+		top 50%
+		right 10px
+		transform translateY(-50%)
+		color $primary-color
+		cursor pointer
+		display none
+.porn__list
+	padding 15px
+	text-align left
+	background $list-bg
+	overflow-y auto
+	display block
+	height 100%
+	counter-reset list
+
+	&--item
+		display block
+		margin-bottom 7px
+		position relative
+		&:before
+			counter-increment list
+			content counter(list) '.'
+			display inline-block
+			margin-right 5px
+		&:last-child
+			margin-bottom 0
+		img
+			display inline-block
+			width 16px
+			height 16px
+			margin-right 5px
+	&--link
+		position relative
+		text-decoration underline
+		color $dark-color
+		&:hover
+			text-decoration none
+			color $accent-color
 
 @import '_footer.styl'
 // File with media quaeries styles

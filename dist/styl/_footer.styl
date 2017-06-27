@@ -1,1 +1,53 @@
 @import '_vars.styl'
+
+.footer
+	width 100%
+
+	background #7e3179
+	background -moz-linear-gradient(top, #3e3c3d 0%, #7e3179 100%)
+	background -webkit-linear-gradient(top, #3e3c3d 0%, #7e3179 100%)
+	background linear-gradient(top, #3e3c3d 0%, #7e3179 100%)
+	border-top 4px solid $accent-color
+	color $light-color
+	
+	padding 20px 0
+	
+	&__title
+		font 1em $Bold
+		margin-bottom 15px
+		
+	
+
+	&__descr
+		margin-top 30px
+		border-top 4px solid $primary-color
+		border-bottom 4px solid $primary-color
+		padding-top 30px
+		text-align left
+		p
+			margin-bottom 25px
+			font-size .8em
+			
+.copy__row
+	padding 30px 0
+	text-align center
+	font-size .8em
+	border-bottom 4px solid $primary-color
+	a
+		color $accent-color
+		&:hover
+			text-decoration underline
+			
+.contact__list
+	padding 30px 0
+	text-align center
+	&--item
+		display inline-block
+		margin-right 15px
+		&:last-child
+			margin-right 0
+	&--link
+		color $primary-color
+		font-size .9em 
+		&:hover
+			text-decoration underline
