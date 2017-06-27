@@ -1,0 +1,39 @@
+{
+  "name": "clean_starting_template",
+  "version": "1.0.0",
+  "description": "popup blocks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alpscloud/alps_popup.git"
+  },
+  "author": "winde",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alpscloud/alps_popup/issues"
+  },
+  "homepage": "https://github.com/Alpscloud/alps_popup#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-html-prettify": "0.0.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-stylus": "^2.5.0",
+    "gulp-svgmin": "^1.2.3",
+    "gulp-uglify": "^2.0.0",
+    "gulp-uncss": "^1.0.6",
+    "gulp-watch": "^4.3.9",
+    "imagemin-pngquant": "^5.0.0",
+    "stylus-media-queries": "^1.0.0"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
+}

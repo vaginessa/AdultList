@@ -1,0 +1,19 @@
+{
+  "name": "alps_popup",
+  "description": "popup blocks",
+  "authors": [
+    "winde"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Alpscloud/alps_popup",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "magnific-popup": "^1.1.0"
+  }
+}
